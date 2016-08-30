@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:background="@drawable/meswim"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/up_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/up"
+        android:text="" />
+
+    <Button
+        android:id="@+id/down_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/up_button"
+        android:layout_centerInParent="true"
+        android:background="@drawable/down"
+        android:text="" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/down_button"
+        android:background="@drawable/settings"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/settings_button"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:text=""
+            android:textColor="#fcfcfc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:text=""
+            android:textColor="#fcfcfc"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>
